@@ -35,9 +35,9 @@
         <div class="container" ng-app="myApp" ng-controller="newPlaceCtrl">    
           <form name="searchForm" novalidate ng-submit="search()">
           <div class="input-group">
-            <input name="place" type="text" class="form-control" ng-model="searchPlace" required autofocus />
+            <input name="place" type="text" class="form-control" ng-model="searchPlace" placeholder="Enter Address" required autofocus />
             <span class="input-group-btn">
-                <button class="btn btn-primary" ng-disabled="searchForm.$invalid">Show Map</button>
+                <button class="btn btn-primary" ng-disabled="searchForm.$invalid">Locate on Map</button>
             </span>
           </div>
           </form>
